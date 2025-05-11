@@ -35,8 +35,9 @@ function App() {
         chainId: "testnetbeta",
         transitions: [{
           program: "piggybanker10.aleo",
-          functionName: "createvault",
+          functionName: "rcreatevault",
           inputs: [
+            `${vaultRecord}`,
             `${data}u32`, // e.g. "12345u32"
             `${vaultDuration}u32`,
             `${creditsAmount}u64`
@@ -67,9 +68,8 @@ function App() {
       chainId: "testnetbeta",
       transitions: [{
         program: "piggybanker10.aleo",
-        functionName: "createvault",
+        functionName: "rcreatevault",
         inputs: [
-          `${vaultRecord}`,
           `${data}u32`, // e.g. "12345u32"
           `${vaultDuration}u32`, // using the vaultRecord value from state
           `${creditsAmount}u64`

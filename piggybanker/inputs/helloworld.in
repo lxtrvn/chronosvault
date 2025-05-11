@@ -1,0 +1,4 @@
+// The program input for chronosvault/src/main.leo
+[createvault]
+public height: u32 = 7654321u32;
+hours: u32 = 2u32;
