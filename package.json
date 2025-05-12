@@ -7,9 +7,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "webpack",
+    "build": "webpack build",
     "dev-webpack": "webpack serve",
-    "build:vite": "vite build",
+    "build:vite": "vite build build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "install-leo": "./install.sh"
