@@ -4,6 +4,7 @@
   "homepage": "https://lxtrvn.github.io/chronosvault",
   "version": "0.0.0",
   "scripts": {
+    "build": "[my-framework] build --output public"
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
